@@ -12,9 +12,16 @@
     <p>
       Inventory management system is a software that helps us to manage the inventory of our product.
     </p>
-   
-  
   </body>
 
-  
+  <table>
+  {% for t in table %}
+      <tr>
+      {% for i in t %}
+          <td>{{ i }}</td>
+      {% endfor %}
+      </tr>
+  {% endfor %}
+   </table>
 </html>
+
